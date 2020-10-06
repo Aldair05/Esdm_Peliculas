@@ -1,0 +1,334 @@
+/* Generales */
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    margin-top: 30px;
+}
+
+h1::after, 
+h2::after{
+    content: '';
+    margin: 0 auto;
+    /* background-image: url(http://localhost/PHP/phpmvc/public/img/icono-titulo.jpg); */
+    height: 3px;
+    width: 70px;
+    display: block;
+    margin-top: 5px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color:#E1DFD2 !important;
+    padding-top: 15px;
+}
+
+
+
+
+
+/* Menu */
+
+header{
+    background-color: #092D39 !important;
+    width: 100%;
+    height: 70px;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    
+    margin: auto;
+}
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    float: left;
+    text-align: right;
+   
+    /* padding-top: 30px; */
+    /* box-sizing: border-box; */
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    /* display: inline-block; */
+    
+    line-height: 40px;
+    transition: all .5s ease;
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    color: #fff;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-family:'Roboto', sans-serif;
+    display: block;
+    
+}
+
+
+nav ul li:hover{
+    background-color: #008175;
+    /* display: block; */
+}
+
+
+
+/* Menu movil  */
+
+ .menu-movil{
+    width: 70px;
+    display:none;
+} 
+
+.menu-movil span{
+    height: 6px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    display: block;
+}
+
+@media only screen and (max-width:768px){
+
+    .ancho {
+        width: 100%;
+    }
+    .logo, .logo-2{
+        display: none;
+    }
+    .menu-movil{
+        display: block;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    
+    nav{
+        width: 100%;
+        position: relative;
+        display: none;
+    }
+
+    .navegacion-principal{
+        display: none;
+    }
+  
+
+    nav ul li{
+        display: block;
+        background-color: #092D39;
+        z-index: 200;
+    }
+
+
+}
+
+/* Contenido */
+.contenedor-seccion{
+    min-height: calc(100vh - 70px - 250px);
+    padding-top: 30px;
+}
+
+
+.card {
+
+    width:13rem !important;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+
+.card-body a{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width:768px){
+    .card{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+  
+}
+
+/* Footer */
+
+footer{
+    background-color: rgba(50,50,50, 0.9);
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+
+@media only screen and (max-width:768px){
+        footer{
+            height:100%;
+        }
+}
+
+.footer-img{
+    background-image: url(http://localhost/phpPeliculas/public/img/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.main{
+    padding: 20px 0;
+    width: 500px;
+    margin:0 auto;
+}
+
+
+.caja-contacto{
+    text-align: center;
+}
+
+
+
+.listas{
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.listas li {
+    list-style: none;
+}
+
+.listas li i {
+    font-size: 1.5rem;
+    color: #E1DFD2;
+    margin-right:10px ;
+}
+
+.copy{
+    color: #E1DFD2;
+}
+
+
+.listas li span{
+    color: #E1DFD2;
+    justify-content: end;
+}
+
+.intereses{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.lista-intereses {
+    text-align: left;
+    display: inline-block;
+}
+
+
+.lista-intereses li{
+    list-style: none;
+}
+
+.lista-intereses li a{
+    text-decoration: none;
+    color: #E1DFD2;
+    transition: all 0.9s ease-in-out;
+}
+
+.lista-intereses li i {
+    padding-right: 10px;
+}
+
+.lista-intereses li a:hover{
+    color: #2e5417;
+}
+
+
+.caja-redes{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.lista-iconos{
+    text-align: left;
+    display: inline-block;
+}
+
+.lista-iconos li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.lista-iconos li i{
+    color: #E1DFD2;
+    font-size: 1.8rem;
+    padding-right: 1.2rem;
+    transition: all 0.9s ease-in-out;
+}
+
+
+.lista-iconos li i:hover{
+    color:#2e5417;
+}
+
+
+
+
+.center{
+    text-align: center;
+}
+
+.error{
+    color: red;
+}
+
+
+/* Seccion Consulta */
+
+.contenedor-tabla{
+    padding-top: 50px;
+}
+form{
+    padding-top: 30px;
+}
+.form-group label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0rem;
+}
+
+.btn-registrar{
+    width: 100px;
+    padding: 5px;
+    /* background-color: #2e5417; */
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-registrar:hover{
+    background-color: #B2DB94;
+    border-style: none;
+}
+
